@@ -1,0 +1,36 @@
+# Use PHP54 Single php.ini as default
+# Changed PHP handler from application/x-httpd-php54s to application/x-httpd-phpbetas on Mon Nov 23 13:00:26 MST 2015.
+AddHandler application/x-httpd-phpbetas .php
+
+# Error 404
+ErrorDocument 404 /404/index.html
+
+# Exclude root files
+RewriteCond $1 !^(favicon\.ico|index\.php|robots\.txt|sitemap\.xml) [NC]
+
+# Force the www (not used here but listed for reference)
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L] 
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+  FileETag MTime Size
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript
+  ExpiresActive On
+  ExpiresDefault "access plus 1 seconds"
+  ExpiresByType text/html "access plus 600 seconds"
+  ExpiresByType application/xhtml+xml "access plus 600 seconds"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month "
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+
+<FilesMatch "\.(gif¦jpe?g¦png¦ico¦css¦js¦swf)$">
+Header set Cache-Control "public"
+</FilesMatch>
+
+</IfModule>

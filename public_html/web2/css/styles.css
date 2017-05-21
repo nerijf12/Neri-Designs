@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: black;
+}
+
+.wrapper {
+	display: block;
+	width: 660px;
+	height: 380px;
+	margin: 0 auto;
+}
+
+.bigwrapper {
+	display: block;
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	background-image: url(../assets/images/800x600splash.png);
+	background-repeat: no-repeat;
+	background-position: 0 -40px;
+}
+
+h1 {
+	display: block;
+	width:660px;
+	height: 70px;
+	background-image: url(../assets/images/up.png);
+	background-position: -70px -180px;
+	position: absolute;
+	top: 140px;
+}
+
+ol li a {
+	display: block;
+	width: 300px;
+	height: 140px;
+	float: left;
+	background-image: url(../assets/images/up.png);
+	background-repeat: no-repeat;
+}
+
+ol li a:hover {
+	display: block;
+	width: 300px;
+	height: 140px;
+	float: left;
+	background-image: url(../assets/images/over.png);
+	background-repeat: no-repeat;
+}
+
+
+ol li.bootcamp a,
+ol li.redesign a {
+	margin-right: 60px;
+}
+
+ol li.bootcamp a,
+ol li.forms a {
+	margin-bottom: 70px;
+}
+
+
+
+/*nav - up */
+ol li.bootcamp a {
+	background-position: -70px -40px;
+
+}
+
+ol li.forms a {
+	background-position: -430px -42px;
+
+}
+
+ol li.redesign a {
+	background-position: -70px -250px;
+
+}
+
+ol li.extra a {
+	background-position: -430px -250px;
+
+}
+
+/* over state */
+
+ol li.bootcamp a:hover {
+	background-position: -70px -40px;
+
+}
+
+ol li.forms a:hover {
+	background-position: -430px -42px;
+
+}
+
+ol li.redesign a:hover {
+	background-position: -70px -250px;
+
+}
+
+ol li.extra a:hover {
+	background-position: -430px -250px;
+
+}
+
+
+ol li a span {
+	display: none;
+	
+}
+
+p.footer {
+	display: block;
+	width: 660px;
+	height: 20px;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	background-image:url(../assets/images/up.png);
+	background-repeat:no-repeat;
+	font-size:11px;
+	background-position: -50px -500px;
+	color: #FFF;
+	position:absolute;
+	top: 500px;
+}
+
+.footer a {
+	color: #09C;
+}

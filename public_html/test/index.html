@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+    p, a{font-family: arial,sans-serif;}
+		form{padding:20px;}
+    input{width:100%;height:25px;background-color:#ffffff;color:#a6a6a6;border:1px solid #d7d7d7;padding:0 5px;font-size:14px;}
+    button{min-width:120px;font-size: 15px;padding: 10px 18px;background-color:#8aa73c;border: 0;color:#ffffff;text-align:center;cursor:pointer;}
+		h1{font-family:'Times New Roman', Times, serif;font-weight: normal;font-size: 40px;}
+		h2{font-family: arial,sans-serif;font-weight: normal;color: #8aa73c;font-size: 24px;margin: 25px auto 0 auto;}
+		h3{font-family: arial,sans-serif;font-size:18px;margin:0;}
+		#joinemailoverlay{width: 575px;text-align: center;background: #fff;margin: 0 auto;border: 30px solid #1E1E1E;}
+		#joinemailoverlayform{width:480px;margin:0 auto;}
+    #fieldEmail{width:200px;height:36px;background-color:#ffffff;color:#a6a6a6;border:1px solid #d7d7d7;}
+		#overlay {width:100%;height: 100%;position: fixed;z-index: 1;top: 0;left: 0;background-color: rgb(0,0,0);background-color: rgba(0,0,0, 0.75);text-align: right;}
+		#container{position: fixed;top: 24%;left: 50%;margin:0 0 0 -305px;}
+		#container .close a{color:#ffffff;cursor: pointer;text-decoration: none;}
+  </style>
+</head>
+<body>
+	<div id="overlay">
+		<div id="container">
+			<div class="close">
+				<a href="#">X</a>
+			</div>
+			<div id="joinemailoverlay" class="hide-on-mobile">
+				<div id="joinemailoverlayform" class="containerJoinemail">
+					<h1>DON'T MISS A THING</h1>
+					<p class="joinEmailpara2">BE THE FIRST TO HEAR ABOUT OUR</p>
+					<h2>NEWS, SALES AND EXCLUSIVE OFFERS</h2>
+					<hr>
+					<h3><strong>JOIN OUR MAILING LIST NOW!</strong></h3>
+					<form action="http://email.gpeflow.com/t/r/s/uldukjl/" method="post" id="subForm" target="_parent">
+			      <input id="fieldEmail" name="cm-uldukjl-uldukjl" type="email" placeholder="Enter Your Email Address" required />
+			      <button type="submit">Subscribe</button>
+			    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	$(function(){
+		var cookie_name = 'form_overlay';
+		var cookie_value = 'timeframe';
+		function create_cookie(name, value, days2expire, path) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days2expire * 24 * 60 * 60 * 1000));
+			var expires = date.toUTCString();
+			document.cookie = name + '=' + value + ';' + 'expires=' + expires + ';' + 'path=' + path + ';';
+		}
+		$('#overlay .close').on("click",function(){
+			$('#overlay').fadeOut(500, "linear");
+			create_cookie(cookie_name, cookie_value, 30, "/");
+			console.log(cookie_name);
+		});
+	});
+	</script>
+</body>
+</html>

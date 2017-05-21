@@ -1,0 +1,148 @@
+ @charset "UTF-8";
+/* CSS Document */
+
+body #wrapper {
+	display: block;
+	width: 900px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Jacques Francois', serif;
+	text-align:center;
+	background-color: #000;
+	color: white;
+	font-size: 40px;
+	line-height: 150%;
+}
+
+h2 {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 700;
+	font-size:25px;
+	line-height:250%;
+}
+
+h3 {
+	font-family: 'Londrina Solid', cursive;
+	font-size:30px;
+
+}
+
+p {
+	font-family: 'Londrina Solid', cursive;
+	font-size:45px;
+	background-color:#099;
+}
+
+#font {
+	display: block;
+	width: 200px;
+	margin-left: 250px;;
+	float: left;
+	padding-right: 100px;
+	
+}
+
+img {
+	display: block;
+	width:
+	float: left;
+}
+
+#shim {
+	clear: both;
+}
+
+p {
+	margin-top: 2em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.transform {
+	margin-top: 2em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.fade {
+	font-family:'Quattrocento Sans', sans-serif;
+	font-size:14px;
+	text-decoration: none;
+}
+
+.fade a.transition2 {
+	font-family:'Quattrocento Sans', sans-serif;
+	text-align:center;
+	font-size:50px;
+	margin-top: 2em;
+	text-decoration: none;
+	display: block;
+}
+
+a.transition {
+	padding: 25px 0;
+	background-color: #099;
+	-webkit-transition: background 1s ease-out;
+	-moz-transition: background 1s ease-out;
+	transition: background 1s ease-out;
+}
+
+a.transition:hover {
+	background-color:#F60;
+}
+
+a.transition:active {
+	background-color: #696;
+}
+
+a.transition2 {
+	padding: 25px 0;
+	background-color: #099;
+	-webkit-transition: background 1s ease-out;
+	-moz-transition: background 1s ease-out;
+	transition: background 1s ease-out;
+}
+
+a.transition2:hover {
+	background-color:#000;
+}
+
+a.transition2:active {
+	background-color: #C60;
+}
+
+.spin{
+	margin-top: 2em;
+	-webkit-animation-name: theyspinning;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 100000;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-name: theyspinning;
+	-moz-animation-duration: 2s;
+	-moz-animation-iteration-count: 100000;
+	-moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes theyspinning{
+	from{
+		-webkit-transform:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+	}	
+	
+}
+
+@-moz-keyframes theyspinning{
+	from{
+		-moz-transform:rotate(0deg);
+	}
+	to {
+		-moz-transform:rotate(360deg);
+	}	
+	
+}

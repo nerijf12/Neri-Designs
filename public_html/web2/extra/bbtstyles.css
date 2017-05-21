@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Juan Neri
+THE BIG BANG THEORY Project
+*/
+
+/* ------------------Body------------------*/
+body {
+	background-image: url(assets/twinkle_twinkle_@2X.png);
+}
+
+#wrapper {
+	width: 960px;
+	margin: 20px auto 20px auto;
+	background-image: url(assets/grey.png);
+	box-shadow: 1px 1px 2px 2px #888888;
+}
+
+section {
+	float: left;
+}
+
+.shim {
+	clear: both;
+}
+
+p#description  {
+	display: block;
+	width: 210px;
+}
+
+p#videodescription  {
+	display: block;
+	width: 400px;
+	margin: 5px 0 0 0;
+}
+
+#top {
+	display: block;
+	width: 550px;
+	float: left;
+}
+
+#topleft {
+	display: block;
+	width: 210px;
+	float:left;
+	margin-left: 20px;
+}
+
+#search {
+	margin-bottom: 25px;
+	width: 210px;
+}
+
+#mid {
+	display: block;
+	width:400px;
+	margin-top: 20px;
+	margin-left: 160px;
+	margin-right: 60px;
+	float: left;
+}
+
+#headnews {
+	margin-top: 15px;
+}
+
+.cast {
+	display: block;
+	float: left;
+	width: 160px;
+	margin-bottom: 20px;
+}
+
+.name {
+	display: block;
+	width: 100px;
+	float: right;
+}
+
+#bottom {
+	display: block;
+	width: 320px;
+}
+
+header {
+	margin-top: 20px;
+}
+
+img {
+	border-radius: 2px;
+}
+
+#subscribe {
+	display: block;
+	width: 350px;
+	float: right;
+}
+
+footer {
+	display: block;
+	width: 960px;
+	background-color: #CCC;
+	padding: 10px 0 10px 0;
+}
+
+#formssub {
+	margin: 0 0 30px 0;
+}
+
+#search {
+	margin-top: 15px;
+}
+
+/* ------------------Typography------------------*/
+h1 {
+	font-family: 'futura', futura, arial;
+	font-weight: 'book';
+	font-size:44px;
+	margin: 10px 0 10px 0;
+}
+
+h2 {
+	font-family: 'futura', futura, arial;
+	font-weight: 'book';
+	font-size:25px;
+	color: #099;
+	margin: 0 0 10px 0;
+}
+
+
+p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	line-height: 1.3em;
+}
+
+a {
+	font-family: 'futura', arial;
+	font-weight: 'book';
+	color: #099;
+	text-decoration:none;
+}
+
+#sub  {
+	font-family: 'futura', arial;
+	font-weight: book;
+	font-size:24px;
+	color: #999;
+}
+
+table {
+	color:#999;
+}
+
+footer p {
+	font-size:12px;
+	text-align:center;
+}
+
+/* ------------------Navigation------------------*/
+
+nav {
+	display: block;
+	width: 100px;
+	float: left;
+	text-align: center;
+	margin: 15px 60px 0 0;
+}
+
+a.button {
+	display: block;
+	margin-bottom: 10px;
+	color: #999;
+	padding: 10px 0 10px 0;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	float: left;
+	width: 90px;
+	margin-left: 10px;
+	border: solid 1px #999999;
+	border-radius: 2px;
+}
+
+a:hover {
+	display: block;
+	width: 90px;
+	color: #099;
+}
+
+a.button.active1 {
+	display: block;
+	width: 90px;
+	color: #099;
+	border: solid 1px #099;
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pimp My Shoes | Contest Entry Form</title>
+
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="shoestyle.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<h1>Pimp My Shoes Contest Entry Form</h1>
+<p id="pblock">Want to trade in your old sneakers for a pair of Forcefields? Make a case for why your shoes have got to go and you may be one of ten lucky winners! 
+</p>
+
+  <form name="contest" method="post" action="" id="contest">
+    <fieldset>
+      <legend>Contest Entry Information</legend>
+      <table width="393" border="0">
+        <tr>
+          <td width="76">Name</td>
+          <td width="307"><input name="Name" type="text" class="fontset1" id="Name"></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><input name="City" type="text" class="fontset2" id="City"></td>
+        </tr>
+        <tr>
+          <td><label class="fancy" for="state">State</label></td>
+          <td><input name="State" type="text" id="State" size="5" maxlength="2"></td>
+        </tr>
+  </table>
+      <p>
+        <label id="block">My shoes are so old...<br>
+  <textarea name="Story" rows="5" id="Story">(Your entry must be no more than 300 characters long)</textarea>
+        </label>
+      </p>
+      
+    </fieldset>
+    
+    <h2>Design your custom Forcefields!</h2>
+    <fieldset>
+      <legend>Custom Shoe Design</legend>
+      
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="radio" name="color" value="red" id="color_0">
+            Red</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="color" value="blue" id="color_1">
+            Blue</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="color" value="black" id="color_2">
+            Black</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="color" value="silver" id="color_3">
+            Silver</label></td>
+        </tr>
+      </table>
+      <p>Features (choose as many as you want)
+      </p>
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="features" value="laces" id="features_0">
+            Sparkle Laces</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="features" value="logo" id="features_1">
+            Metallic Logo</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="features" value="heels" id="features_2">
+            Light-up Heels</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="features" value="mp3" id="features_3">
+            MP3-enabled</label></td>
+        </tr>
+      </table>
+      <p>Size (sizes reflect standard men's sizing):
+        
+        <label>
+          <select name="size" id="size">
+            <option value="5" selected>5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+          </select>
+        </label>
+      </p>
+    </fieldset>
+    <input type="submit" name="submit" id="submit" value="Pimp My Shoes">
+    <input type="submit" name="reset" id="reset" value="Reset">
+  </form>
+<footer>
+<p>© 2012 - <a href="http://neri-designs.com">Juan Neri</a> - <a href="http://web2.neri-designs.com/form/">Forms</a></p>
+</footer>
+
+</body>
+</html>

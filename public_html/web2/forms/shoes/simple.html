@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Form</title>
+<style type="text/css">
+fieldset {
+	margin: 10px;
+	padding: 10px;
+	width: 300px;
+	background-color: #CCC;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #333;
+	border-left-color: #333;
+}
+input {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: smaller;
+	color: #960;
+	text-decoration:blink;
+}
+</style>
+</head>
+
+<body><form action="" method="post" enctype="multipart/form-data" name="Simple">
+  <fieldset>
+    <legend>A little about you</legend>
+    <p>
+      <label>Name:
+        <input type="text" name="name" id="name">
+      </label>
+    </p>
+    <p>
+      <label>Email:
+        <input type="text" name="Email" id="Email">
+      </label>
+    </p>
+    <p>
+      <label>favorite color
+        <select name="color" id="color">
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </label>
+    </p>
+  
+  </fieldset>
+  <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+      <input type="reset" name="Reset" id="Reset" value="Reset">
+    </p>
+</form>
+</body>
+</html>

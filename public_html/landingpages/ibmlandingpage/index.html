@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
+
+<meta name="keywords" content="design, art, photography, creative, web, html, css, responsive, resume">
+
+<meta name="description" content="Hello, I'm Juan and this is my personal design website. Feel free to scroll down and see my designs and artwork.">
+
+<meta name="author" content="Juan F. Neri">
+
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="//use.typekit.net/orm4jef.js"></script>
+
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+<title>Hello IBM, I'm Juan F. Neri</title>
+
+</head>
+
+<body>
+<div id="nav-col">
+
+<div class="layout-col">
+
+<header id="main">
+ 
+<img src="../assets/iconbig.png" alt="Logo" id="logo" />
+
+<nav id="mainNav" role="navigation" class="cf">
+
+<span class="nav-btn"></span>
+<ul class="topMenu">
+<li><a href="http://neri-designs.com/" title="My Website" target="_blank" class="smoothScroll">Website</a> </li>
+<li><a href="http://www.neri-designs.com/rwd/responsive-resume/"  title="My online résumé" target="_blank" class="smoothScroll">Online Résumé</a></li>
+<li><a href="http://www.neri-designs.com/aplaceformyhead" title="A Place For My Head" target="_blank" >My Blog</a></li>
+<li><a href="http://www.neri-designs.com/#contact" title="Send me a Message" target="_blank" >Contact Me</a></li>
+</ul>
+
+</nav>
+
+</header>
+<div class="shim"></div>
+
+</div><!--end of layout col-->
+</div> <!--end of nav col-->
+
+<div id="intro">
+
+<section id="hello">
+
+<header>
+<h1>Hello, IBM</h1>
+<h2>I'm Juan F. Neri</h2>
+
+<p>Please feel free to click and download my portfolio, my résumé, and my cover letter.</p>
+
+<p id="extra"><a href="assets/low_res_mini_portfolio.pdf" title="Low-Res Mini-Portfolio" target="_blank"> Mini-Portfolio </a>  |  <a href="assets/juan_neri_resume.pdf" title="My Printable Résumé" target="_blank" >My Resume</a> | <a href="assets/juan_neri_coverletter.pdf" title="Cover Letter" target="_blank" > Cover Letter</a> </p>
+</header>
+
+</section>
+</div>
+<div class="shim"></div>
+
+<div class="full-col">
+<div class="layout-col">
+
+<footer>
+
+<p>© 2015 | <a href="mailto:info@neri-designs.com">info@neri-designs.com</a> | Last Updated 26 May 2015</p>
+
+</footer>
+
+</div>
+</div>
+
+<script>
+	$('span.nav-btn').click(function(){
+		//expand the menu
+		$('ul.topMenu').slideToggle();
+	})
+	
+	$(window).resize(function() {
+		if ( $(window).width() > 600) {
+			$('ul.topMenu').removeAttr('style');
+		}
+})
+</script>
+
+</body>
+</html>

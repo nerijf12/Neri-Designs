@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*-------------------------------------------
+Juan Neri
+19 February 2012
+
+
+/*-------------------------------------------*/
+
+
+/*-----------Table of Contents---------------
+
+1. Reset
+2. Typography
+3. Links
+4. Layout
+
+ -------------------------------------------*/
+
+ /* 1. Reset
+------------------------------------------*/
+* { margin : 0; padding: 0; font-size: 100%;}
+
+/* 2. Typography
+------------------------------------------*/
+body { 
+	font-size: 15px; /* base size */
+	line-height: 115%; /* leading */
+	font-family: "helvetica light", serif;
+} 
+
+h1, h2, h3 {
+	font-family: "Quantico", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 240%;
+	margin-bottom: 20px;
+	color:#900;
+}
+
+h2 {
+	font-size: 150%;
+	margin-bottom: 05px;
+	color: #333;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 75%;
+	text-align: left;
+	color: #333;
+}
+
+blockquote {
+	font-size: 80%;
+	font-style: italic;
+	font-family:"Futura", sans-serif ;
+	font-weight: bold;
+	line-height: 180%;
+	text-transform:uppercase;
+	border-top: 1px solid #900;
+	padding: 5px 70px 5px 70px;
+	color: #333;
+}
+
+blockquote:first-letter { font-size: 115%; }
+
+p {
+	font-size: 96%;
+	line-height: 140%;
+	text-align: left;
+	margin-top: 9px;
+	padding-right: 15px;
+	padding-left: 20px;
+	font-family: "Quantico", sans-serif;
+}
+
+
+
+
+
+/* 3. Links
+------------------------------------------*/
+
+
+/* 4. Layout
+------------------------------------------*/
+body {
+	width: 700px;
+	height:400px;	
+	margin: 0 auto;
+	background-image: url(images/robotbackground.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #999;
+	padding: 20px 4px 0 8px;
+	
+}
+
+a{
+	font-family: "Quantico", sans-serif;
+	text-decoration:none;
+	color:#900;
+	font-style: italic;
+	padding: 5px;
+}

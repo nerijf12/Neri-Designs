@@ -1,0 +1,117 @@
+/* CSS Document */
+
+
+ header {
+	width: 95%;
+	margin: 0 auto;
+	border-bottom: dotted 2px silver;
+}
+
+.wrapper {
+	width: 300px;
+	margin: 0 auto;
+}
+
+section {
+	width: 92%;
+	margin: 30px auto;
+
+}
+
+h2 span.address:after{
+	content: '';
+}
+
+h2 span{
+	display:block;
+}
+
+/*------------------typography------------------*/
+
+h1{
+	text-align: center;
+	text-transform:uppercase;
+	font-family: "ff-cocon-web-pro",sans-serif;
+	font-weight: 700;
+	font-size: 350%;
+	margin: 10px 0;
+	line-height: 120%;
+}
+
+h2 {
+	color: #9f8c72;
+	text-align: center;
+	line-height: 125%;
+	font-family: "ff-cocon-web-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 95%;
+	margin: 10px 0;
+	line-height: 150%;
+}
+
+h3 {
+	text-transform:uppercase;
+	font-family: "ff-cocon-web-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 200%;
+	margin: 15px 0;
+	line-height: 150%;
+}
+
+h4 {
+	color: #9f8c72;
+	text-align: center;
+	text-transform:uppercase;
+	font-family: "ff-cocon-web-pro",sans-serif;
+	font-weight: 700;
+	font-size: 100%;
+	margin: 10px 0;
+}
+
+
+/*------------------Qualificaitons------------------*/
+
+section#qualifications div {
+	width: 100%;
+	margin: 20px auto;
+	padding: 20px 0;
+	border-bottom: dotted 2px silver;
+	border-left: none;
+}
+
+section#qualifications div ul {
+	text-align:center;
+}
+
+
+/*------------------Education------------------*/
+
+section#education dl {
+	width: 100%;
+	margin: 0 auto;
+}
+
+dl#right {
+	margin-right:0;
+}
+
+/*------------------Footer------------------*/
+
+footer {
+	width: 85%;
+	margin: 30px auto;
+	padding: 40px 0;
+	text-align: center;
+	border-top: dotted 2px silver;
+}
+
+footer p {
+	line-height: 150%;
+	font-family: "ff-cocon-web-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 100%;
+	margin: 10px 0;
+}

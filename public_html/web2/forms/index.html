@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Unit 2- Forms</title>
+<script type="text/javascript">
+function MM_jumpMenuGo(objId,targ,restore){ //v9.0
+  var selObj = null;  with (document) { 
+  if (getElementById) selObj = getElementById(objId);
+  if (selObj) eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0; }
+}
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<link href="index_styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Unit 2 - Forms</h1>
+<p>Choose which form you would like to see:</p>
+<form name="form" id="form">
+  <select name="jumpMenu" id="jumpMenu">
+    <option value="shoes/index.html">Pimp My Shoes</option>
+    <option value="spry.html">Contact</option>
+  </select>
+  <input type="button" name="go_button" id= "go_button" value="Go" onclick="MM_jumpMenuGo('jumpMenu','parent',0)" />
+</form>
+<p>© 2012 - <a href="http://www.neri-designs.com/web2/">Juan Neri</a></p>
+<form name="form2" id="form2">
+  <select name="jumpMenu2" id="jumpMenu2" onchange="MM_jumpMenu('parent',this,0)">
+    <option selected="selected">Select</option>
+    <option value="http://web2.neri-designs.com">Web 2 Project Page</option>
+    <option value="http://www.neri-designs.com">Homepage</option>
+    <option value="http://www.cgauiw.com">CGA@UIW</option>
+    <option value="http://www.uiw.edu">UIW</option>
+  </select>
+</form>
+<p>&nbsp;</p>
+<p id="space">&nbsp;</p>
+</body>
+</html>

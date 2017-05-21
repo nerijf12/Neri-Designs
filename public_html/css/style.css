@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+body{ background-image: url(../assets/subtle_dots.png);font-size: 16px;line-height: 1.5em;letter-spacing: 0.4px; }
+#container { display:block; width: 100%; height: auto; margin: 0 auto; background-image: url(../assets/subtle_dots.png); -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);-ms-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);top: 500px;position: relative;}
+#nav-col {width: 100%;background-color:rgba(0,0,0,1.00);padding: 5px 0;-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);-ms-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);top:0px;position: fixed;z-index:100;opacity: 0.9;filter: alpha(opacity=90);}
+.full-col {width: 100%;background-color:rgba(0,0,0,1.00);padding: 20px 0;-webkit-box-shadow: 0px -2px 10px 1px rgba(0,0,0,0.75);-moz-box-shadow: 0px -2px 10px 1px rgba(0,0,0,0.75);box-shadow: 0px -2px 10px 1px rgba(0,0,0,0.75);-ms-box-shadow: 0px -2px 10px 1px rgba(0,0,0,0.75);}
+#intro {width: 100%;min-height:100%;height: auto;position: fixed;top:0;bottom:0;}
+#intro:before {content: ' ';display: block;position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;background: url(../images/overlay.png) repeat 0 0;opacity: 0.85;}
+.layout-col {/*background-image: url(assets/960_grid_16_col.png);background-position: top center;*/max-width: 960px;margin: 0 auto;}
+header {width: 100%; /* 820/820 */padding: 10px 0;}
+section {width: 85.416667%; /* 820/960 */margin: 0 auto;}
+.movemehere{width: 100%;padding: 40px 0;}
+.shim {clear:both;}
+img {display: block;margin:0 auto;}
+
+
+/*------------------Typography----------------*/
+span{text-transform:uppercase;font-family: "ff-cocon-web-pro",sans-serif;font-weight: 700;}
+h1{text-align: center;text-transform:uppercase;font-family: "ff-cocon-web-pro",sans-serif;font-weight: 700;font-size: 4em;line-height: 1em;margin: 20px auto 25px auto;}
+h2 {color: #9f8c72;text-align: center;line-height: 1.6em;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;font-size: 1em;}
+h3 {text-align: center;text-transform:uppercase;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;font-size: 2em;line-height: 1.3em;}
+h4 {color: #9f8c72;text-align: center;text-transform:uppercase;font-family: "ff-cocon-web-pro",sans-serif;font-weight: 700;font-size: 1.3em;}
+h5 {line-height: 1.75em;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;font-size: 1em;}
+h6 {color:#669999;text-transform:uppercase;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;font-size: .9em;}
+p {font-family: "minion-pro", minion pro, serif;font-style: normal;font-weight: 400;font-size: 1.25em;line-height: 1.6em;}
+ul li {font-size: 1.1em;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;text-align: center;line-height: 1.1em;}
+a {font-size: 1em;color: silver;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;text-align: center;line-height: 1.1em;text-decoration: none;}
+
+small {font-size: 1em;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;text-align: center;line-height: 1.1em;}
+
+
+/*------------------Nav----------------*/
+header#main {width: 85.416667%; /* 820/960 */margin: 0 auto 0 7.2916667%; /* 70/960 */z-index: 2;}
+header#main img {display:block;width: 6%;margin-top: 5px;}
+header nav {width: 100%; /* 820/820 */margin: 0 auto;padding: 5px 0;}
+header nav ul {width: 100%;margin-top: -50px;}
+header nav ul li {display: inline-block;width: 19.512195%; /* 160/820 */margin: 15px 0 15px 1.8292683%; /* 15/820 */}
+header nav ul li:nth-child(1) {text-align: center;margin-left: 0;}
+header nav ul li:nth-child(3) {text-align: center;margin-left: 16.463415%; /* 135/820 */}
+header nav ul li a:hover {color:rgba(120,169,169,1.00);}
+
+/*------------------Layout----------------*/
+section#hello {padding: 200px 0 75px 0;}
+section#hello header h1{color: #9f8c72;}
+section#hello header p {color: silver;text-align:center;	}
+header p#extra {display: block;width: 100%;font-size: 1.5em;text-align:center;margin-top: 30px;margin-bottom: 50px;}
+header p#extra a {color:rgba(120,169,169,1.00);}
+header p#extra a:hover{color:#9f8c72;}
+
+/*------------------Portfolio----------------*/
+figure{width: 48.780488%; /* 400/820 */margin-top: 40px;margin-right: 2.4390244%; /* 20/820 */margin-bottom: 75px;margin-left: 0;float: left;}
+figure img{width: 100%;}
+figure.row-2 {margin-right:0;}
+figure img#skater{width: 81%;}
+figcaption {margin: 10px auto;}
+h5.description {text-align: center;}
+h5.description a {color:rgba(120,169,169,1.00);}
+h5.description a:hover{color: #9f8c72;}
+
+/*------------------Contact Me----------------*/
+#contactme{border:none;margin-bottom: 50px;}
+form {display:block;width: 100%;}
+.dash{border:dotted silver 1.5px;}
+form table {width: 48.2%;margin: 0 auto;float:left;}
+input.textzone, textarea {font-size:.9em;width: 100%;margin: 0;vertical-align: baseline;background: none repeat scroll 0% 0% #EFEFEF;background-image:url(../assets/subtle_dots.png);border: dotted silver 1.5px;}
+input#submit.send {width: 100%;height: 50px;background: none repeat scroll 0% 0% black;border: none;margin: 30px auto 35px auto;font-size: 1.5em;color: silver;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;cursor:pointer;}
+input#submit.send:hover {color:rgba(120,169,169,1.00);}
+table#infotable2 {margin-left:3%;}
+table#infotable2 tr td textarea{min-height: 130px;}
+form #response {color: #333;border: 1px dotted silver;width: 90%;	margin: 0 auto 20px auto;height:auto;padding-top: 10px;padding-right: 1.2195122%; /* 10/820 */padding-bottom: 10px;padding-left: 8.5365854%; /* 70/820 */min-height: 45px;}
+form #response p {margin: 0;padding: 0;}
+.error {	background: #FF9F9F url(../assets/error.png) no-repeat 5px 1.2195122%; /* 10/820 */}
+.success {background: #B8F5B1 url(../assets/icon_ok.png) no-repeat 5px 1.2195122%; /* 10/820 */}
+.processing {background: #DED5AB url(../assets/ajax-loader.gif) no-repeat 5px 1.2195122%; /* 10/820 */}
+#captchaimg {margin:0; width:12%;}
+
+/*------------------footer----------------*/
+footer {width: 85.416667%; /* 820/960 */margin: 10px auto;padding: 30px 0;}
+footer p {font-size: 1em;text-align: center;color:rgba(120,169,169,1.00);}
+
+
+/*------------------media-quaries----------------*/
+
+@media only screen and (max-width: 922px) {
+h1 {font-size: 4em;}
+section {width: 90.607735%; /* 820/905 */}
+section#hello {padding: 170px 0 75px 0;}
+header#main {width: 90.607735%; /* 820/905 */margin: 0 auto;}
+header nav ul li {width: 14.634146%; /* 120/820 */margin-left: 7.3170732%; /* 60/820 */font-size: 1.1em;}
+header nav ul li:nth-child(1) {text-align: center;margin-left: 1.4634146%; /* 12/820 */}
+header nav ul li:nth-child(3) {text-align: center;margin-left: 20.731707%; /* 170/820 */}
+#captchaimg {width:20%;}
+}
+
+@media only screen and (max-width: 860px) {
+section#hello header h1 span:after{content: "\a";white-space:pre;}
+}
+
+
+@media only screen and (max-width: 800px) {
+section {width: 88.607595%; /* 700/790 */}
+section#hello {padding: 125px 0 0 0;margin-top: 0;}	
+header#main {width: 97.142857%; /* 680/700 */margin: 0 auto;}
+header nav {width: 100%;margin: 0 auto;padding: 5px 0;}
+header nav ul {width: 100%;}
+header nav ul li:nth-child(1) {text-align: center;margin-left: 0; /* 25/700 */}
+header nav ul li:nth-child(3) {text-align: center;margin-left: 23.571429%; /* 165/700 */}
+}
+
+@media only screen and (max-width: 725px) {
+figure {width: 100%;margin-top: 40px;margin-right: 0;margin-bottom: 75px;margin-left: 0;float: none;}
+figure img{width: 85%;}
+h1 {font-size:4em;}
+p {font-size: 1em;}
+section {margin-top:5px;}
+header#main img {width: 8%;margin-top: 5px;}
+figure img{width: 85%;}
+}
+
+
+@media only screen and (max-width: 600px) {
+#container {top: 500px;}
+section#hello {padding: 100px 0 0 0;}	
+section#hello header h1{font-size: 4em;}
+section#hello header p{font-size: .95em;}
+section#hello header #extra{margin: 10px auto 0 auto;}
+section#hello header #extra a{font-size: 1.25em;}
+form table {width: 100%;float:none;}
+table#infotable2 {margin-left:0;}
+header#main img {width: 8.5%;float: left;}
+header#main {padding:0;margin: 0 auto;}
+#mainNav{width: 100%;margin: 0 auto;}
+.nav-btn{display: block;color: silver;font-size: 1em;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;text-align: right;cursor: pointer;padding-bottom: 15px;margin-top: 5px;}
+.nav-btn:before{content:url(../assets/menu-icon-35x30.png);/*content:"Menu";*//*	content:"☰";	*/}
+#mainNav ul.topMenu {width: 100%;margin: 0 auto;display: none;}
+#mainNav ul.topMenu li {display: block;width: 100%;float: none;margin: 0 auto;/*border-bottom: solid 1px silver;*/border-top: solid 1px silver;}
+#mainNav ul.topMenu li:last-child{margin-bottom: 0;}
+#mainNav ul.topMenu li a{display: block;width: 100%;font-size: 1em;text-align: center;margin: 5px auto 15px auto;}
+#mainNav ul li:hover {/*border-bottom: solid 1px rgba(120,169,169,1.00);*/border-top: solid 1px rgba(120,169,169,1.00);transition: 0.5s;}
+/*#mainNav ul li a:hover {transition: 0.5s;}*/
+#captchaimg {width:20%;}
+}
+
+@media only screen and (max-width: 580px) {
+h1 {font-size:3em;}
+form #response {padding-left: 12.5365854%;}
+}
+
+@media only screen and (max-width: 550px) {
+section#hello {padding: 60px 0 0 0;}
+section#hello header h1 {font-size: 3em;}
+header#main img {width: 11%;}
+#container {top: 400px;}
+#captchaimg {width:25%;}
+}
+
+@media only screen and (max-width: 360px) {
+section#hello {padding: 60px 0 0 0;}
+section#hello header h1 {font-size: 2.5em;}
+section#hello header p {font-size: 1em;}
+section#hello header #extra{margin: 20px auto 0 auto;}
+header#main img {width: 13%;}
+#captchaimg {width:25%;}
+form #response {padding-left: 12.5365854%;}
+}
+
+
+/*------------------ Colorbox Core Style:The following CSS is consistent between example themes and should not be altered ----------------*/
+
+#colorbox, #cboxOverlay, #cboxWrapper {position: absolute;top: 0;left: 0;z-index: 9999;overflow: hidden;}
+#cboxWrapper {max-width: none;}
+#cboxOverlay {position: fixed;width: 100%;height: 100%;}
+#cboxMiddleLeft, #cboxBottomLeft {clear: left;}
+#cboxContent {position: relative;}
+#cboxLoadedContent {overflow: auto;-webkit-overflow-scrolling: touch;}
+#cboxTitle {margin: 0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {cursor: pointer;}
+.cboxPhoto {float: left;margin: auto;border: 0;display: block;max-width: none;-ms-interpolation-mode: bicubic;}
+.cboxIframe {width: 100%;height: 100%;display: block;border: 0;padding: 0;margin: 0;}
+#colorbox, #cboxContent, #cboxLoadedContent {box-sizing: content-box;-moz-box-sizing: content-box;-webkit-box-sizing: content-box;}
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {background: url(../images/overlay.png) repeat 0 0;}
+#colorbox {outline: 0;}
+#cboxTopLeft {width: 21px;height: 21px;background: url(../images/controls.png) no-repeat -101px 0;}
+#cboxTopRight {width: 21px;height: 21px;background: url(../images/controls.png) no-repeat -130px 0;}
+#cboxBottomLeft {width: 21px;height: 21px;background: url(../images/controls.png) no-repeat -101px -29px;}
+#cboxBottomRight {width: 21px;height: 21px;background: url(../images/controls.png) no-repeat -130px -29px;}
+#cboxMiddleLeft {width: 21px;background: url(../images/controls.png) left top repeat-y;}
+#cboxMiddleRight {width: 21px;background: url(../images/controls.png) right top repeat-y;}
+#cboxTopCenter {height: 21px;background: url(../images/border.png) 0 0 repeat-x;}
+#cboxBottomCenter {height: 21px;background: url(../images/border.png) 0 -29px repeat-x;}
+#cboxContent {background: #fff;overflow: hidden;}
+.cboxIframe {background: #fff;}
+#cboxError {padding: 50px;border: 1px solid #ccc;}
+#cboxLoadedContent {margin-bottom: 28px;}
+#cboxTitle {position: absolute;bottom: 4px;left: 0;text-align: center;width: 100%;color: #949494;}
+#cboxCurrent {position: absolute;bottom: 4px;left: 58px;color: #949494;}
+#cboxLoadingOverlay {background: url(../images/loading_background.png) no-repeat center center;}
+#cboxLoadingGraphic {background: url(../images/loading.gif) no-repeat center center;}
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border: 0;padding: 0;margin: 0;overflow: visible;width: auto;background: none;}
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline: 0;}
+#cboxSlideshow {position: absolute;bottom: 4px;right: 30px;color: #0092ef;}
+#cboxPrevious {position: absolute;bottom: 0;left: 0;background: url(../images/controls.png) no-repeat -75px 0;width: 25px;height: 25px;text-indent: -9999px;}
+#cboxPrevious:hover {background-position: -75px -25px;}
+#cboxNext {position: absolute;bottom: 0;left: 27px;background: url(../images/controls.png) no-repeat -50px 0;width: 25px;height: 25px;text-indent: -9999px;}
+#cboxNext:hover {background-position: -50px -25px;}
+#cboxClose {position: absolute;bottom: 0;right: 0;background: url(../images/controls.png) no-repeat -25px 0;width: 25px;height: 25px;text-indent: -9999px;}
+#cboxClose:hover {background-position: -25px -25px;}
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft, .cboxIE #cboxTopCenter, .cboxIE #cboxTopRight, .cboxIE #cboxBottomLeft, .cboxIE #cboxBottomCenter, .cboxIE #cboxBottomRight, .cboxIE #cboxMiddleLeft, .cboxIE #cboxMiddleRight {
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+}

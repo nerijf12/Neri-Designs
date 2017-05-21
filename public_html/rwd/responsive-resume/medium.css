@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*------------------typography------------------*/
+
+
+
+/*-----------------qualifications----------------*/
+
+section#qualifications div {
+	width: 100%;
+	margin: 15px auto;
+	border-bottom: dotted 1px silver;
+	border-left: none;
+}
+
+section#qualifications div ul {
+	text-align:center;
+	margin: 0 0 25px 0;
+}
+
+/*------------------Education------------------*/
+
+section#education dl {
+	width: 100%;
+	margin: 15px 0 5px 0;
+	padding: 0 0 20px 0;
+	border-bottom: dotted 1px silver;
+	text-align: center;
+}
+
+dl#right {
+	margin-right:0;
+}

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (max-width: 800px) {
+
+body {
+	position: relative;
+	color: #6b6b6b;
+	-webkit-transition: margin .3s ease, -webkit-transform .3s ease;
+	-moz-transition: margin .3s ease, -moz-transform .3s ease;
+	-o-transition: margin .3s ease, transform .3s ease;
+	-ms-transition: margin .3s ease, transform .3s ease;
+	transition: margin .3s ease, transform .3s ease;
+	width: 100%;
+}
+
+body.nav-expanded {
+	margin-left: -280px;
+}
+nav.eoffcanvas {
+	position: fixed;
+	top: 0;
+	right: -280px;
+	width: 280px;
+	height: 100%;
+	background-color: #b7b7b7;
+	color: #333;
+	z-index: 30;
+	-webkit-transition: right .3s ease, -webkit-transform .3s ease;
+	-moz-transition: right .3s ease, -moz-transform .3s ease;
+	-o-transition: right .3s ease, transform .3s ease;
+	-ms-transition: right .3s ease, transform .3s ease;
+	transition: right .3s ease, transform .3s ease;
+	overflow: hidden;
+	box-shadow: inset 4px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.nav-expanded nav.eoffcanvas {
+	right: 0;
+}
+.scrolling {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.example-header {
+	width: 100%;
+	position: relative;
+	background-color: #f4f4f4;
+	height: 100px;
+}
+.e-logo {
+	float: left;
+	line-height: 100px;
+	margin: 0;
+}
+.nav-toggle {
+	text-transform: uppercase;
+	display: block;
+	line-height: 100px;
+	float: right;
+}
+.nav-toggle:hover {
+	color: #999;
+}
+nav.eoffcanvas ul {
+	margin: 40px 0 0 0;
+	padding: 0;
+}
+nav.eoffcanvas ul li {
+	margin: 0;
+	display: block;
+	width: 100%;
+}
+nav.eoffcanvas ul li a {
+	border-bottom: 1px solid #f4f4f4;
+	padding: 8px 0 8px 25px;
+	color: #333;
+	width: 100%;
+	display: block;
+}
+
+}

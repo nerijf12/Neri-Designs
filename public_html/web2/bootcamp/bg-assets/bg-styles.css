@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body .wrapper {
+	height: 600px;
+	width: 900px;
+	margin: 0 auto;
+	background-image: url(backgroundpractice/grass.png), url(backgroundpractice/tree.png), url(backgroundpractice/alien.gif), url(backgroundpractice/bakcground.png);
+	background-repeat:repeat-x, no-repeat, no-repeat, no-repeat;
+	background-position:0 505px, bottom center, 385px 400px, center;
+}
+
+

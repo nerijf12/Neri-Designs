@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*------------------media-quaries----------------*/
+
+@media only screen and (max-width: 922px) {
+h1 {font-size: 4em;}
+section {width: 90.607735%; /* 820/905 */}
+section#hello {padding: 170px 0 75px 0;}
+header#main {width: 90.607735%; /* 820/905 */margin: 0 auto;}
+header nav ul li {width: 14.634146%; /* 120/820 */margin-left: 7.3170732%; /* 60/820 */font-size: 1.1em;}
+header nav ul li:nth-child(1) {text-align: center;margin-left: 1.4634146%; /* 12/820 */}
+header nav ul li:nth-child(3) {text-align: center;margin-left: 20.731707%; /* 170/820 */}
+}
+
+@media only screen and (max-width: 860px) {
+section#hello header h1 span:after{content: "\a";white-space:pre;}
+}
+
+
+@media only screen and (max-width: 800px) {
+section {width: 88.607595%; /* 700/790 */}
+section#hello {padding: 125px 0 0 0;margin-top: 0;}	
+header#main {width: 97.142857%; /* 680/700 */margin: 0 auto;}
+header nav {width: 100%;margin: 0 auto;padding: 5px 0;}
+header nav ul {width: 100%;}
+header nav ul li:nth-child(1) {text-align: center;margin-left: 0; /* 25/700 */}
+header nav ul li:nth-child(3) {text-align: center;margin-left: 23.571429%; /* 165/700 */}
+}
+
+@media only screen and (max-width: 725px) {
+
+figure {width: 100%;margin-top: 40px;margin-right: 0;margin-bottom: 75px;margin-left: 0;float: none;}
+figure img{width: 85%;}
+h1 {font-size:4em;}
+p {font-size: 1em;}
+section {margin-top:5px;}
+header#main img {width: 8%;margin-top: 5px;}
+figure img{width: 85%;}
+}
+
+
+@media only screen and (max-width: 600px) {
+#container {top: 500px;}
+section#hello {padding: 100px 0 0 0;}	
+section#hello header h1{font-size: 4em;}
+section#hello header p{font-size: .95em;}
+section#hello header #extra{margin: 10px auto 0 auto;}
+section#hello header #extra a{font-size: 1.25em;}
+form table {width: 100%;float:none;}
+table#infotable2 {margin-left:0;}
+header#main img {width: 8.5%;float: left;}
+header#main {padding:0;margin: 0 auto;}
+#mainNav{width: 100%;margin: 0 auto;}
+.nav-btn{display: block;color: silver;font-size: 1em;font-family: "ff-cocon-web-pro",sans-serif;font-style: normal;font-weight: 400;text-align: right;cursor: pointer;padding-bottom: 15px;margin-top: 5px;}
+.nav-btn:before{content:url(../assets/menu-icon-35x30.png);/*content:"Menu";*//*	content:"☰";	*/}
+#mainNav ul.topMenu {width: 100%;margin: 0 auto;display: none;}
+#mainNav ul.topMenu li {display: block;width: 100%;float: none;margin: 0 auto;/*border-bottom: solid 1px silver;*/border-top: solid 1px silver;}
+#mainNav ul.topMenu li:last-child{margin-bottom: 0;}
+#mainNav ul.topMenu li a{display: block;width: 100%;font-size: 1em;text-align: center;margin: 5px auto 15px auto;}
+#mainNav ul li:hover {/*border-bottom: solid 1px rgba(120,169,169,1.00);*/border-top: solid 1px rgba(120,169,169,1.00);transition: 0.5s;}
+/*#mainNav ul li a:hover {transition: 0.5s;}*/
+}
+
+@media only screen and (max-width: 580px) {
+h1 {font-size:3em;}
+}
+
+@media only screen and (max-width: 550px) {
+section#hello {padding: 60px 0 0 0;}
+section#hello header h1 {font-size: 3em;}
+header#main img {width: 11%;}
+#container {top: 400px;}
+}
+
+@media only screen and (max-width: 360px) {
+section#hello {padding: 60px 0 0 0;}
+section#hello header h1 {font-size: 2.5em;}
+section#hello header p {font-size: 1em;}
+section#hello header #extra{margin: 20px auto 0 auto;}
+header#main img {width: 13%;}
+}

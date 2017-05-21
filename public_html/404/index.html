@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
+
+<meta name="keywords" content="design, art, photography, creative, web, html, css, responsive, resume">
+
+<meta name="description" content="Hello, I'm Juan and this is my personal design website. Feel free to scroll down and see my designs and artwork.">
+
+<meta name="author" content="Juan F. Neri">
+
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="/404/styles.css" rel="stylesheet" type="text/css">
+<link href="../css/style-responsive.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="//use.typekit.net/orm4jef.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+<title>Oops! 404 page.</title>
+
+</head>
+
+<body>
+<div id="nav-col">
+
+<div class="layout-col">
+
+<header id="main">
+ 
+<img src="../assets/iconbig.png" alt="Logo" id="logo" />
+
+<nav id="mainNav" role="navigation" class="cf">
+
+<span class="nav-btn"></span>
+<ul class="topMenu">
+<li><a href="http://neri-designs.com/" title="My Website" class="smoothScroll">Website</a> </li>
+<li><a href="http://www.neri-designs.com/rwd/responsive-resume/"  title="My online résumé" class="smoothScroll">Online Résumé</a></li>
+<li><a href="http://www.neri-designs.com/aplaceformyhead" title="A Place For My Head" >My Blog</a></li>
+<li><a href="http://www.neri-designs.com/#contact" title="Send me a Message" >Contact Me</a></li>
+</ul>
+
+</nav>
+
+</header>
+<div class="shim"></div>
+
+</div><!--end of layout col-->
+</div> <!--end of nav col-->
+
+<div id="intro">
+
+<section id="hello">
+    <header id="error-page">
+        <h1>404</h1>
+        <h2>Sorry, Page Not Found</h2>
+        
+        <p>The page you requested cannot be found. The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        
+        <h3>Please try the following:</h3>
+        <ul>
+            <li>If you typed the page address in the Address bar, make sure that it is spelled correctly.</li>
+            <li>Use the navigation bar on the top to find the link you are looking for.</li>
+            <li>Click the back button to try another link.</li>
+        </ul>
+    </header>
+</section>
+</div>
+
+<script >
+$(document).ready(function(){
+	$('span.nav-btn').click(function(){
+		//expand the menu
+		$('ul.topMenu').slideToggle(700,function(){
+			$('a.smoothScroll').click(700,function(){
+				$('ul.topMenu').slideUp(700);
+			});
+		});
+	});
+	
+	$(window).resize(function() {
+		if ( $(window).width() > 600) {
+			$('ul.topMenu').removeAttr('style');
+		}
+	})
+});
+</script>
+
+</body>
+</html>
